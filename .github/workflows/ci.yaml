@@ -28,4 +28,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: jperomingo/python-app:${GITHUB_SHA::6} # El tag son los primeros 6 caracteres del commitID
+          tags: jperomingo/python-app:${{ github.sha }}
